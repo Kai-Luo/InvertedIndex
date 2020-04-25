@@ -1,0 +1,19 @@
+{
+    "name": "carlos/inverted-index",
+    "description": "Just and inverted index data structure",
+    "authors": [
+        {
+            "name": "Kai-Luo",
+            "email": "chpbcn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "InvertedIndex\\" : "src/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
