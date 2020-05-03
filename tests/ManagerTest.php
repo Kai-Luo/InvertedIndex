@@ -1,4 +1,6 @@
 <?php
+
+use InvertedIndex\Reader;
 use PHPUnit\Framework\TestCase;
 
 class ManagerTest extends TestCase {
@@ -7,6 +9,8 @@ class ManagerTest extends TestCase {
     {
         $path = "../test.txt";
         $reader = new Reader();
-        $reader->read($path);
+        foreach ($reader->read($path) as $row) {
+            var_dump($row);
+        }
     }
 }
